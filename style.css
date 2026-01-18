@@ -123,6 +123,40 @@ p{
     color: #ff7a00;
     font-weight: bold;
 }
+#whatsappForm{
+    max-width: 360px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 122, 0, 0.2);
+}
+#whatsappForm h3{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ff7a00;
+}
+#whatsappForm input,
+#whatsappForm textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ff7a00;
+}
+#whatsappForm button{
+    width: 100%;
+    padding: 12px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#whatsappForm button:hover{
+    opacity: .9;
+}
+
 /* footer */
 footer p{
     text-align: center;
