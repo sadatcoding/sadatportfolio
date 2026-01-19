@@ -4,7 +4,6 @@ window.onload = () => {
 
 document.getElementById("whatsappForm").addEventListener("submit", function(e){
     e.preventDefault();
-    const nom = document.getElementById("nom").value;
     const prenom = document.getElementById("prenom").value;
     const ville = document.getElementById("ville").value;
     const messageUser = document.getElementById("message").value;
@@ -18,8 +17,8 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e){
         salutation = "Bonsoir";
     }
 
-    const messageFinal = `${salutation}`
-    Je m'appelle ${nom,prenom}.
+    const messageFinal = `${salutation}
+    Je m'appelle ${prenom}.
     Je vous ecris depuis ${ville}.
     ${messageUser}`;
 
