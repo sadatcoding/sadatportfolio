@@ -1,6 +1,18 @@
-window.onload = () => {
-    document.querySelector(".hreo").computedStyleMap.opacity ="1";
-};
+window.addEventListener("load", () => {
+    document.body.classList.add("is-loaded");
+
+    const animatedElements = document.querySelectorAll(".section, #whatsappForm, .project-card, .skill");
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                currentObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.14 });
+
+    animatedElements.forEach((element) => observer.observe(element));
+});
 
 document.getElementById("whatsappForm").addEventListener("submit", function(e){
     e.preventDefault();

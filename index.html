@@ -3,44 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | developpeur</title>
+    <title>Sadat Arimyao | Développeur Full-Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h2 class="logo">Sadat Arimyao</h2>
+            <a href="#top" class="logo"><span>SA</span> Sadat Arimyao</a>
         <ul>
             <li><a href="#">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
+            <li><a href="#about">À propos</a></li>
             <li><a href="#projects">Projets</a></li>
-            <li><a href="#skills">Competences</a></li>
+            <li><a href="#skills">Compétences</a></li>
         </ul>
-        <a href="#contact" class="btn">AS DEV SOLUTIONS</a>
+        <a href="#contact" class="btn nav-cta">AS DEV SOLUTIONS <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
          
         </nav>
     </header>
 
+    <main id="top">
     <section class="hero">
         <div class="content">
             <div class="profile">
-                <img src="img/img-2.jpg" alt="profile">
+                <img src="img/img-2.jpg" alt="Portrait de Sadat Arimyao">
             </div>
 
-            <h1>Salut, moi c'est <span>Sadat</span>. <br>Developpeur Full-Stack.</h1>
-            <p>Vous avez une idée en tête alors contacter moi.</p>
+            <div class="eyebrow"><span></span> Disponible pour de nouveaux projets</div>
+            <h1>Je transforme vos idées<br>en <span>expériences digitales.</span></h1>
+            <p class="hero-copy">Développeur Full-Stack basé au Togo, je conçois des produits web et mobiles rapides, élégants et pensés pour vos utilisateurs.</p>
 
             <div class="buttons">
-                <a href="doc/CV_Sadat_Arimyao.docx" download="cv" class="btn-outline">Télécharger mon CV</a>
-                <a href="tel:+22897056009" class="btn">Contacter moi</a>
+                <a href="doc/CV_Sadat_Arimyao.docx" download="cv" class="btn-outline"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+                <a href="tel:+22897056009" class="btn">Parlons de votre projet <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="icon">
-            <a href="https://www.tiktok.com/@sadat.developpeur"><img src="img/tik.png" alt=""></a>
-            <a href="https://wa.me/22897056009?text=Salut%20bienvenue%20!%20Chez%20AS%20DEV%20SOLUTIONS%Developpeur%20Web%20et%20Mobile%20Comment%20pouvons-nous%20vous%20aider%20?" target="_blank"><img src="img/what.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/sadat-arimyao-14b58a377?utm_source=share&utm_compaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/link.png" alt=""></a>
-            <a href="https://github.com/sadatcoding"><img src="img/16833872-logo-github-icone-git-hub-sur-fond-blanc-gratuit-vectoriel.jpg" alt=""></a>
-            <a href="https://mailto:arimyaosadat.as@gmail.com"><img src="img/email.png" alt=""></a>
+            <div class="social-links" aria-label="Réseaux sociaux">
+            <a href="https://www.tiktok.com/@sadat.developpeur" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/22897056009" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/sadat-arimyao-14b58a377" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/sadatcoding" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:arimyaosadat.as@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://spinkatc.mychariow.com" aria-label="Chariow"><i class="fa-solid fa-globe"></i></a>
             
             </div>
         </div>
@@ -48,35 +55,37 @@
 
     <!-- about -->
      <section id="about" class="section">
-        <h2>A propos de moi</h2>
-        <p class="section-te">Je suis developpeur full-Stack passioner par la creation d'interfaces modermes, rapides et reponsives. <br> Jutilise les langages des programmations et je progresse vers des technologie avancees.</p>
+          <p class="section-kicker">01 / Le développeur derrière les pixels</p>
+        <h2>À propos de moi</h2>
+          <p class="section-text">Je suis développeur Full-Stack passionné par la création d'interfaces modernes, rapides et responsives. J'utilise les technologies web et mobile pour donner vie à des solutions utiles, claires et durables.</p>
      </section>
 
      <!-- projects -->
       <section id="projects" class="section">
+                <p class="section-kicker">02 / Une sélection de réalisations</p>
         <h2>Mes Projets</h2>
         <div class="projects">
-            <div class="project-card">
+            <div class="project-card"><span class="card-number">01</span><i class="fa-solid fa-cart-shopping card-icon"></i>
                 <h3>Site E-commerce</h3>
                 <p>Boutique en ligne avec panier interface moderne.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card"><span class="card-number">02</span><i class="fa-solid fa-scissors card-icon"></i>
                 <h3>Salon de coiffure</h3>
                 <p>Salon de coiffure moderne,hommes femmes.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card"><span class="card-number">03</span><i class="fa-solid fa-graduation-cap card-icon"></i>
                 <h3>Site web scolaire</h3>
                 <p>Site pour un etablissement scolaire.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card"><span class="card-number">04</span><i class="fa-solid fa-utensils card-icon"></i>
                 <h3>Bar Restaurant</h3>
                 <p>Bar Restaurant pour tous vos commandes et livraison rapide.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card"><span class="card-number">05</span><i class="fa-solid fa-code card-icon"></i>
                 <h3>Portfolio</h3>
                 <p>Portfolio personnel responsive en HTML, CSS, JS</p>
             </div>
-            <div class="project-card">
+            <div class="project-card"><span class="card-number">06</span><i class="fa-solid fa-capsules card-icon"></i>
                 <h3>Application Pharmacie</h3>
                 <p>Application web de gestion des produits pharmaceutiques.</p>
             </div>
@@ -85,26 +94,27 @@
 
       <!-- skills -->
        <section id="skills" class="section">
-        <h2>Mes Competences</h2>
+        <p class="section-kicker">03 / Des outils maîtrisés</p>
+        <h2>Mes Compétences</h2>
         <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">PHP</div>
-            <div class="skill">Laravel</div>
-            <div class="skill">Flutter</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">WordPress</div>
-            <div class="skill">Github</div>
+            <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="skill"><i class="fa-brands fa-laravel"></i> Laravel</div>
+            <div class="skill"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</div>
+            <div class="skill"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="skill"><i class="fa-brands fa-github"></i> GitHub</div>
         </div>
        </section>
-       <form  id="whatsappForm">
+    <form id="whatsappForm" class="contact-form">
+     <p class="section-kicker">04 / Construisons quelque chose</p>
         <h3>Contact WhatsApp</h3>
         <input type="text" id="prenom" placeholder="Votre prenom" required>
         <input type="text" id="ville" placeholder="Votre ville" required>
 
         <textarea name="" id="message" placeholder="Votre message"></textarea>
-        <button type="submit">Envoyer sur WhatsApp</button>
+        <button type="submit">Envoyer sur WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
        </form>
        <!-- footer -->
         <footer>
@@ -112,5 +122,6 @@
         </footer>
 
     <script src="script.js"></script>
+    </main>
 </body>
 </html>
