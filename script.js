@@ -12,6 +12,35 @@ window.addEventListener("load", () => {
     }, { threshold: 0.14 });
 
     animatedElements.forEach((element) => observer.observe(element));
+
+    if (window.matchMedia("(pointer: fine)").matches) {
+        document.querySelectorAll(".project-card").forEach((card) => {
+            card.addEventListener("pointermove", (event) => {
+                const rect = card.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width - 0.5;
+                const y = (event.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = `translateY(-5px) rotateX(${-y * 9}deg) rotateY(${x * 9}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+
+            card.addEventListener("pointerleave", () => {
+                card.style.transform = "";
+            });
+        });
+
+        const profile = document.querySelector(".profile");
+        if (profile) {
+            profile.addEventListener("pointermove", (event) => {
+                const rect = profile.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width - 0.5;
+                const y = (event.clientY - rect.top) / rect.height - 0.5;
+                profile.style.transform = `translateY(-7px) rotateX(${-y * 12}deg) rotateY(${x * 12}deg) rotateZ(-4deg)`;
+            });
+
+            profile.addEventListener("pointerleave", () => {
+                profile.style.transform = "";
+            });
+        }
+    }
 });
 
 document.getElementById("whatsappForm").addEventListener("submit", function(e){

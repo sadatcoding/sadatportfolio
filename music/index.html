@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de SADAT, artiste togolais. Découvre sa musique, ses projets et écoute ses sons sur YouTube et Spotify.">
+    <title>SADAT | Artiste & Auteur-Compositeur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#top" aria-label="Accueil SADAT">SADAT</a>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="#univers">Univers</a>
+            <a href="#music">Musique</a>
+            <a href="#contact">Booking</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-image" aria-hidden="true">
+                <img src="../img/img-2.jpg" alt="">
+            </div>
+            <div class="hero-content">
+                <p class="eyebrow">Artiste & Auteur-Compositeur</p>
+                <h1 id="hero-title">SADAT</h1>
+                <p class="hero-intro">Une voix, des émotions.<br>Une musique faite pour traverser les frontières.</p>
+                <div class="hero-actions">
+                    <a class="button button-spotify" href="https://open.spotify.com/artist/23CaLtQqHmxhODgocAoEZM?si=R9EVC8ejTPaKp1niqBCwJg&utm_source=copy-link" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-spotify"></i> Écouter sur Spotify
+                    </a>
+                    <a class="button button-ghost" href="https://www.youtube.com/@SadatMusique" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-youtube"></i> Voir sur YouTube
+                    </a>
+                </div>
+            </div>
+            <p class="hero-index">OFFICIAL / 2026</p>
+        </section>
+
+        <section id="univers" class="manifesto reveal">
+            <p class="section-number">01</p>
+            <div>
+                <p class="kicker">L'univers SADAT</p>
+                <h2>La musique comme territoire d'émotion.</h2>
+                <p class="manifesto-copy">SADAT raconte les vérités, les élans et les rencontres qui façonnent son univers. Une signature sensible, portée par des mélodies modernes et une identité résolument authentique.</p>
+            </div>
+        </section>
+
+        <section id="music" class="music-section">
+            <div class="section-heading reveal">
+                <p class="section-number">02</p>
+                <div>
+                    <p class="kicker">Écouter maintenant</p>
+                    <h2>Présence musicale</h2>
+                </div>
+            </div>
+
+            <div class="platform-grid">
+                <a class="platform-card spotify-card reveal" href="https://open.spotify.com/artist/23CaLtQqHmxhODgocAoEZM?si=R9EVC8ejTPaKp1niqBCwJg&utm_source=copy-link" target="_blank" rel="noopener">
+                    <span class="platform-icon"><i class="fa-brands fa-spotify"></i></span>
+                    <div>
+                        <p>Spotify</p>
+                        <h3>Découvrez les titres sur Spotify</h3>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                </a>
+
+                <a class="platform-card youtube-card reveal" href="https://www.youtube.com/@SadatMusique" target="_blank" rel="noopener">
+                    <span class="platform-icon"><i class="fa-brands fa-youtube"></i></span>
+                    <div>
+                        <p>YouTube</p>
+                        <h3>Venez écouter la chaîne officielle</h3>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="booking reveal">
+            <p class="kicker">Bookings & collaborations</p>
+            <h2>Créons une scène<br>qui restera mémorable.</h2>
+            <div class="booking-actions">
+                <a class="button button-light" href="mailto:arimyaosadat.as@gmail.com"><i class="fa-solid fa-envelope"></i> Écrire à SADAT</a>
+                <a class="button button-outline" href="https://wa.me/22872136773" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="brand footer-brand" href="#top">SADAT</a>
+        <p>© 2026 SADAT. Tous droits réservés.</p>
+        <div class="footer-socials">
+            <a href="https://open.spotify.com/artist/23CaLtQqHmxhODgocAoEZM?si=R9EVC8ejTPaKp1niqBCwJg&utm_source=copy-link" target="_blank" rel="noopener" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://www.youtube.com/@SadatMusique" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
